@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-wrapper">
+
+        <!--Tape Cassette-->
+        <div class="audio-tape">
+            <div class="front">
+                <span class="screw">+</span>
+                <span class="screw">+</span>
+                <span class="screw">+</span>
+                <span class="screw">+</span>
+                <span class="locker locker-l"></span>
+                <span class="locker locker-r"></span>
+                <div class="tag">
+                    <div class="name"> 
+                        <h1>Retro - Disco '80</h1> 
+                        <h3><a href="https://github.com/rolyart/retro-music">Roland Maruntalu</a></h3>
+                    </div>
+                        
+                    <div class="tape-level">
+                        <div class="filament left">
+                                <div class="hub">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                        </div>
+                        <div class="level-view">
+                        </div>
+                        <div class="filament right">
+                            <div class="hub">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <footer class="footer">
+                    <span class="screw">+</span>
+                    <span class="stiffner"></span>
+                    <span class="stiffner"></span>
+                    <span class="stiffner"></span>
+                    <span class="stiffner"></span>
+                </footer>
+            </div>
+            <div class="play-list" id="playList">
+            </div>
+        </div>
+  
+
+        <div class="player-controler">
+            <div class="controls">
+        
+                <button class="prev"  id="toggleMute"><i class="material-icons">volume_up</i></button>
+                <button class="prev" id="skipPrev"><i class="material-icons">skip_previous</i></button>
+                <button class="play-pause" id="playPause"></button>
+                <button class="next" id="skipNext"><i class="material-icons">skip_next</i></button>
+                <button class="next" id="togglePlayList"><i class="material-icons">queue_music</i></button>
+            </div>
+            <div class="current-file">
+                <div id="bars">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    
+                </div>
+                <div class="name" id="showCurrentFile"></div>
+                <div class="duration" id="duration"></div>
+            </div>
+        
+        </div>
+    </div>
+   
+    <script src="app.js"></script>
+</body>
+</html>
