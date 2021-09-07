@@ -18,7 +18,7 @@ currentIndex = 0;
 var audio = new Audio();
 
 var http = new XMLHttpRequest();
-var url = "http://apps.rolyart.ro/api/retro-music/data.json";
+var url = "https://apps.rolyart.ro/api/retro-music/data.json";
 
 http.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
